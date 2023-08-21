@@ -69,12 +69,12 @@ rm -rf helmiwrt-packages/luci-app-v2raya
 
 # Add LuCI v2rayA
 #if [[ $REPO_BRANCH == *"21.02"* ]]; then
-	echo "OpenWrt $REPO_BRANCH detected! using luci-app-v2raya master branch..."
-	git clone --depth=1 -b master https://github.com/zxlhhyccc/luci-app-v2raya
-elif [[ $REPO_BRANCH == *"18.06"* ]]; then
-	echo "OpenWrt $REPO_BRANCH detected! using luci-app-v2raya 18.06 branch..."
-	git clone --depth=1 -b 18.06 https://github.com/zxlhhyccc/luci-app-v2raya
-fi
+#	echo "OpenWrt $REPO_BRANCH detected! using luci-app-v2raya master branch..."
+#	git clone --depth=1 -b master https://github.com/zxlhhyccc/luci-app-v2raya
+#elif [[ $REPO_BRANCH == *"18.06"* ]]; then
+#	echo "OpenWrt $REPO_BRANCH detected! using luci-app-v2raya 18.06 branch..."
+#	git clone --depth=1 -b 18.06 https://github.com/zxlhhyccc/luci-app-v2raya
+#fi
 
 # Add luci-theme-neobird theme
 git clone --depth=1 https://github.com/helmiau/luci-theme-neobird
