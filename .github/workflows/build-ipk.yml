@@ -53,7 +53,7 @@ on:
         type: choice
         description: Select device platform.
         required: true
-        default: bcm27xx/bcm2711
+        default: x86/64
         options: 
         - armvirt/32
         - armvirt/64
@@ -120,7 +120,7 @@ jobs:
         working-directory: /workdir
         run: |
           df -hT $PWD
-          export REPO_SDK=$(echo "https://downloads.openwrt.org/${BRANCH_REL}/targets/${PLATFORM}/openwrt-sdk-${REPO_BRANCH}-${PLATFORM_SUB}_gcc-11.2.0_musl.Linux-x86_64.tar.xz")
+          export REPO_SDK=$(echo "https://downloads.openwrt.org/${BRANCH_REL}/targets/${PLATFORM}/openwrt-sdk-${REPO_BRANCH}-${PLATFORM_SUB}_gcc-12.3.0_musl.Linux-x86_64.tar.xz")
           echo "REPO_SDK=${REPO_SDK}" >> $GITHUB_ENV
           echo "sdk url:: ${REPO_SDK}"
           wget ${REPO_SDK}
