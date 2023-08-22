@@ -54,7 +54,7 @@ jobs:
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.sdk }}
           FEEDNAME: packages_ci
-          PACKAGES: luci-app-alist
+          PACKAGES: luci-app-tinyfm
           NO_REFRESH_CHECK: true
 
       - name: Upload artifacts
