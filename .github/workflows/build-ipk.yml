@@ -127,8 +127,8 @@ jobs:
           tar xf *.tar.xz
           rm -f *.tar.xz
           mv openwrt-* /workdir/openwrt
-          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-          export OPENWRT_ROOT_PATH="$GITHUB_WORKSPACE/openwrt"
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/immortalwrt
+          export OPENWRT_ROOT_PATH="$GITHUB_WORKSPACE/immortalwrt"
           echo "OPENWRT_ROOT_PATH=$OPENWRT_ROOT_PATH" >> $GITHUB_ENV
           echo "BUILD_OPT=$BUILD_OPT" >> $GITHUB_ENV
           echo -e "===== Information ====="
