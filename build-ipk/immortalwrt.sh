@@ -61,8 +61,8 @@ svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash lu
 # git clone --depth=1 https://github.com/4IceG/luci-app-atinout-mod
 
 # HelmiWrt packages
-git clone --depth=1 https://github.com/helmiau/helmiwrt-packages
-rm -rf helmiwrt-packages/luci-app-v2raya
+git clone --depth=1 https://github.com/18rudi/helmiwrt-packages
+#rm -rf helmiwrt-packages/luci-app-v2raya
 # telegrambot
 #svn co https://github.com/helmiau/helmiwrt-adds/trunk/packages/net/telegrambot helmiwrt-adds/telegrambot
 #svn co https://github.com/helmiau/helmiwrt-adds/trunk/luci/luci-app-telegrambot helmiwrt-adds/luci-app-telegrambot
@@ -77,7 +77,7 @@ rm -rf helmiwrt-packages/luci-app-v2raya
 #fi
 
 # Add luci-theme-neobird theme
-git clone --depth=1 https://github.com/helmiau/luci-theme-neobird
+#git clone --depth=1 https://github.com/helmiau/luci-theme-neobird
 
 # Add Adguardhome
 git clone --depth=1 https://github.com/yang229/luci-app-adguardhome
