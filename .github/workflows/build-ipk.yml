@@ -120,7 +120,6 @@ jobs:
         working-directory: /workdir
         run: |
           df -hT $PWD
-          # https://downloads.immortalwrt.org/releases/23.05.0-rc3/targets/x86/64/immortalwrt-sdk-23.05.0-rc3-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz
           export REPO_SDK=$(echo "https://downloads.immortalwrt.org/${BRANCH_REL}/targets/${PLATFORM}/immortalwrt-sdk-${REPO_BRANCH}-${PLATFORM_SUB}_gcc-12.3.0_musl.Linux-x86_64.tar.xz")
           echo "REPO_SDK=${REPO_SDK}" >> $GITHUB_ENV
           echo "sdk url:: ${REPO_SDK}"
