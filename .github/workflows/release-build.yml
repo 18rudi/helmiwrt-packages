@@ -108,5 +108,6 @@ jobs:
           name: ${{ github.ref_name }}
           token: ${{ secrets.gh_token }}
           allowUpdates: true
+          tag: release-${{ env.DATETIME }}
           replacesArtifacts: true
           artifacts: "${{ matrix.sdk }}-${{ matrix.arch }}.tar.gz"
