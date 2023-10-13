@@ -152,7 +152,7 @@ jobs:
         run: |
           sleep 10
           echo "release_tag=ipk" >> $GITHUB_OUTPUT
-          
+          touch release.txt
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload HelmiWrt Packages to GitHub Release
