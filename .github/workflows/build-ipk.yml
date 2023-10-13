@@ -148,7 +148,7 @@ jobs:
 
       - name: Generate New Release Tag
         id: tag
-        if: steps.organize.outputs.status == 'success' && !cancelled()
+       # if: steps.organize.outputs.status == 'success' && !cancelled()
         run: |
           sleep 10
           echo "release_tag=ipk" >> $GITHUB_OUTPUT
@@ -157,7 +157,7 @@ jobs:
 
       - name: Upload HelmiWrt Packages to GitHub Release
         uses: softprops/action-gh-release@v1
-        if: steps.tag.outputs.status == 'success' && !cancelled()
+      #  if: steps.tag.outputs.status == 'success' && !cancelled()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
