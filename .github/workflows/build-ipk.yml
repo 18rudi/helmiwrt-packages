@@ -15,10 +15,10 @@ on:
         type: choice
         description: Select OpenWrt Branch.
         required: true
-        default: 23.05.0-rc3
+        default: 23.05.0-rc4
         options:  
         - 22.03.3
-        - 23.05.0-rc3
+        - 23.05.0-rc4
         - snapshot
       platform:
         type: choice
@@ -152,7 +152,7 @@ jobs:
         run: |
           sleep 10
           echo "release_tag=ipk" >> $GITHUB_OUTPUT
-          touch release.txt
+          
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload HelmiWrt Packages to GitHub Release
