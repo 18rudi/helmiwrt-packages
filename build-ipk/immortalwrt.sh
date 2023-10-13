@@ -10,11 +10,11 @@
 pushd package
 
 # Add Argon theme configuration
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+#git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 
 # Add official OpenClash dev branch source
 # git clone --depth=1 -b dev https://github.com/vernesong/OpenClash
-svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash luci-app-openclash
+#svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash luci-app-openclash
 
 # Add modeminfo
 #svn co https://github.com/koshev-msk/modemfeed/trunk/luci/applications/luci-app-modeminfo luci-app-modeminfo
@@ -80,7 +80,7 @@ git clone --depth=1 https://github.com/18rudi/helmiwrt-packages
 #git clone --depth=1 https://github.com/helmiau/luci-theme-neobird
 
 # Add Adguardhome
-git clone --depth=1 https://github.com/yang229/luci-app-adguardhome
+#git clone --depth=1 https://github.com/yang229/luci-app-adguardhome
 
 # Out to openwrt dir
 popd
